@@ -20,6 +20,15 @@ public class MapKeyValueArray  {
       }
     }
 	/******************************************************************************************/
+    public List<String> get(String key) {
+      if(map.containsKey(key)) {
+          return map.get(key);
+      } else {
+        List<String> list = new ArrayList<String>();
+        return list;
+      }
+    }
+	/******************************************************************************************/
     public List<String> getMultiValueKeys(int count) {
         List<String> returnKeys = new ArrayList<String>();
         Set<String> keys = map.keySet();
